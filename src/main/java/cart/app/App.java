@@ -31,7 +31,11 @@ public class App
                     }
                     break;
                 case "delete":
-                    currCart.delete(terms[1]);
+                    try {
+                        currCart.delete(terms[1]);
+                    } catch (IndexOutOfBoundsException e) {
+                        System.out.println("Item does not exist in that index!");
+                    }
                     break;
                 case "stop":
                     System.out.println("Thanks for using the cart, see you next time!");
