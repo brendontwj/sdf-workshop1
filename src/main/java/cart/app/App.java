@@ -34,7 +34,7 @@ public class App
                     try {
                         currCart.delete(terms[1]);
                     } catch (IndexOutOfBoundsException e) {
-                        System.out.println("Item does not exist in that index!");
+                        System.out.println("Item does not exist in that index!git");
                     }
                     break;
                 case "stop":
